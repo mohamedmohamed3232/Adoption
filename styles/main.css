@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	background-color: #56c47d;
+	color: lightgray;
+	font-family: 'Varela Round', sans-serif;
+}
+
+header, footer, .main_container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a {
+	color: #7a5fe8;
+	text-decoration: none;
+}
+
+.main_container {
+	background-color: #18191f;
+	display: flex;
+}
+
+.header_bar {
+	background-color: black;
+	display: flex;
+}
+
+h1 {
+	text-align: center;
+}
+
+.flashing {
+	display: inline;
+	animation-name: flash;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+@keyframes flash {
+	from {
+		color: rgb(223, 223, 41);
+	}
+	to {
+		color: rgb(232, 239, 244);
+	}
+}
+
+.icon {
+	color: #408080;
+	padding: 10px;
+	font-size: 2.5em;
+}
+
+.input_container {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.input_field {
+	width: 100%;
+	padding: 10px;
+	border: none;
+}
+
+.grid_wrapper {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 200px 200px 200px 200px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}

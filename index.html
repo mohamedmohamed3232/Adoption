@@ -1,0 +1,92 @@
+<!--This is the home index page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption NYC</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+		<link rel="stylesheet" type="text/css" href="./styles/menu.css">
+		<!--This is a CSS style for the form that is on this page-->
+		<style>
+			.form_container {
+			width: 40%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			background-color: black;
+			padding: 40px;
+			}
+		</style>
+</head>
+<body>
+	<header>
+		<div class="header_bar">
+			<nav>
+				<div class="drop_container">
+					<div class="drop_home"><img src="./img/peticon.png" height=50px width=50px /></div>
+					<div class="menu_items">
+						<a href="index.html">Home</a>
+						<a href="./views/petPicsGallery.html">Pet Pics</a>
+						<a href="./views/adoptionApplication.html">Adoption Application</a>
+					</div>
+				</div>	
+			</nav>
+			<div style="width: 100%; text-align: center;"><h1>Pet Adoption</h1></div>
+		</div>
+	</header>
+	<div class="main_container">
+		<div style="padding: 20px;">
+			<h2>Want a pet for you and your family then you have come to the right place. 
+				We have all kinds of pets for you and your family including exotic pets for the Adventurous.</span></span></Strong>
+				ADOPT DONT SHOP!
+			</h2>
+			<!--Creating a table here for the requirement-->
+			<table>
+				<tr><td>Welcome to NYCs <strong>Pet Adoption</strong> site together we can find the right pet for you 
+				Pleaase watch our adoption testomonies </td></tr>
+				<tr><td></td></tr>
+				<tr><td>To get started, click on <strong><a href="./views/petPicsGallery.html">
+				<span class="flashing">Pet Pics</span></a></strong> using the cat dog icon menu above!</td></tr>
+				<tr><td></td></tr>
+				<tr><td>When you are ready to adopt, use our adoption form here <strong><a href="./views/adoptionApplication.html">
+				Adoption Application</a></strong></td></tr>
+			</table>
+		</div>
+		<div style="padding: 20px; text-align: right;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wWw0iQF5Za8" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen></iframe>
+		</div>
+	</div>
+	<!--  Adding email subscrption for future implementation-->
+	<div class="main_container">
+		<div style="width: 100%; height: 90px; text-align: center;">
+			<hr>			
+			<h2>Wanna be the first to hear about our new pets? Subscribe Below to receive up to date emails</h2>
+		</div>
+	</div>
+	<!--  Here is the form for email  -->
+	<div class="main_container">
+		<div class="form_container">
+			<form>
+				<div class="input_container">
+						<span class="fa fa-user icon"></span>
+						<!--  Using regex to ensure only letters are allowed -->
+						<input class="input_field" id="name" name="subscriber" type="text" minlength="5" maxlength="50"
+							pattern="^[a-zA-Z]+$" placeholder="Name" required /><br />
+				</div>
+				<div class="input_container">
+					<span class="fa fa-envelope icon"></span>
+					<input class="input_field" id="email" name="email" type="email" placeholder="Email" required><br />
+				</div>
+				<input type="submit" value="Subscribe" />
+			</form>
+		</div>			
+
+	</div>
+
+	<footer>
+		<span>Copyright &copy; 2022</span>
+	</footer>
+</html>
